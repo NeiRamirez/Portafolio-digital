@@ -1,0 +1,92 @@
+ /*************SKILLS******************/
+.skills{    
+    background-color: rgb(242, 246, 246);    
+}
+
+.skills__principal{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.skills__title{
+    font-weight: bold;
+    font-size: 25px;
+    align-self: center;
+    margin-top: 25px;   
+    margin-bottom: 18px;
+}
+
+.skills__div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 22px;
+    gap: 37px;
+    margin-bottom: 40px;
+}
+
+/*.skills__div:nth-child(7){
+    flex-grow:unset;
+
+}*/
+
+.skills__box{
+    font-weight: bold;
+    transition: 400ms;  /*Sombras*/
+    box-shadow: 10px 10px 30px 11px #000000; /*Sombras*/
+    /*Primera cifra horizontal, segunda cifra vertical, negativo de laprimera cifra izquierda, negativo segunda cifra arriba*/
+    /*La tercer cifra es la aplicar difuminacion*/
+    /*La cuarta cifra es para expandir la sombra*/
+    border-radius: 8px;
+    transition: 1s all; /*Aumentar*/
+    flex-grow: 1; /*aumenta el tamaño de los alemntos quitndo espacios*/
+}
+
+.skills__box ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;          
+    width: 241.5px;
+    height: 145px;  
+}
+
+
+
+
+
+@media (min-width: 834px){  
+
+    /*************SKILLS******************/
+    .skills__box ul{             
+      width: 220px;
+      height: 130px;    
+  }
+
+  .skills__principal{
+      margin: 0 16px 0 15px; 
+  }
+
+  .skills__box{        
+      flex-grow: 1; /*aumenta el tamaño de los alemntos quitndo espacios*/
+  }   
+}
+
+
+
+@media (min-width:1440px){
+    /*************SKILLS******************/
+          .skills__box ul{             
+            width: 140px;
+            height: 130px;       
+            
+        }
+    
+        .skills__principal{
+            margin: 0 110px 0 65px; 
+        }
+    }
+    
+    

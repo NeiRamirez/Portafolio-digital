@@ -1,0 +1,94 @@
+/*************HOBBIES******************/
+.hobbies{    
+    background-color: rgb(242, 246, 246);        
+}
+
+.hobbies__principal{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;    
+}
+
+.hobbies__title{
+    font-weight: bold;
+    font-size: 25px;
+    align-self: center;
+    margin-top: 21px;
+    margin-bottom: 31px;
+}
+
+.hobbies__div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 22px;
+    gap: 37px;  
+    margin-bottom: 40px;  
+}
+
+.hobbies__box{
+    font-weight: bold;
+    transition: 400ms;  /*Sombras*/
+    box-shadow: 10px 10px 30px 11px #000000; /*Sombras*/
+    /*Primera cifra horizontal, segunda cifra vertical, negativo de laprimera cifra izquierda, negativo segunda cifra arriba*/
+    /*La tercer cifra es la aplicar difuminacion*/
+    /*La cuarta cifra es para expandir la sombra*/
+    border-radius: 8px;
+    transition: 1s all; /*Aumentar*/
+    flex-grow: 1;
+}
+
+.hobbies__box:hover{
+    background: rgb(244, 241, 241); /*Aumentar*/
+    opacity: 0.3; /*Sombras*/
+    transform: scale(1.1); /*Aumentar*/
+}
+
+.hobbies__box ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;          
+    width: 241.5px;
+    height: 145px;  
+}
+
+
+
+
+
+
+
+@media (min-width: 834px){
+    /*************HOBBIES******************/
+    .hobbies__box ul{             
+        width: 220px;
+        height: 130px;    
+    }
+
+    .hobbies__principal{
+        margin: 0 16px 0 15px; 
+    }
+
+    .hobies__box{        
+        flex-grow: 1; /*aumenta el tamaño de los alemntos quitndo espacios*/
+    }
+}
+
+
+
+
+
+@media (min-width:1440px){
+
+    /*************HOBBIES******************/
+       .hobbies__box ul{             
+         width: 140px;
+         height: 130px;     
+     }
+ 
+     .hobbies__principal{
+         margin: 0 110px 0 65px; 
+     }
+}

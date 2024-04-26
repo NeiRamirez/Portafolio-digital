@@ -1,0 +1,127 @@
+/*************CONTACTO******************/
+
+.contacto{
+    background-color: rgb(216, 244, 235); 
+    width: 100%; 
+}
+
+.contacto__principal{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px 0px 24px;
+}
+
+.contacto__title{
+    font-size: 25px;
+    font-weight: bold;
+    align-self:flex-start;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.Contacto__parrafo{
+    margin-bottom: 20px;
+}
+
+.Contacto__parrafo ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__parrafo__uno{
+    font-size: 18px;
+}
+
+.contacto__botones form{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 7px;
+    flex-grow: 1;
+
+}
+
+.input-padron{    
+    padding: 10px 25px;
+    width: 95%;
+    border-color: #4d71a8;
+    box-shadow: inset 0 0 12px 0 #0a3371;
+}
+
+form input{
+    margin-bottom: 13px;
+}
+
+.enviar{
+    width: 130px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0a3371;
+    padding: 10px 20px;
+    border: 2px solid;
+    
+    border-radius: 25px;
+    cursor: pointer;  
+    transition: 1s all;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.enviar:hover{
+    color: #000000;
+    border-color: #0a3371;
+    background: #ffffff;
+    transform: scale(1.1);
+}
+
+ /*******************IMAGEN CONTACTO******************/
+
+.contacto__img{
+    display: none;
+}
+
+
+
+
+@media (min-width: 834px){
+
+    /*************CONTACTO******************/
+    .contacto__principal{
+        margin: 0 43px 0 40px;
+    }
+}
+
+
+
+
+@media (min-width:1440px){
+    /*************CONTACTO******************/
+      .contacto__principal{
+          margin: 38px 110px 20px 10px;
+      }
+  
+      .contacto__img{
+          display: flex;
+          width: 700px;
+          height: 700px;
+      }
+  
+      .contacto{
+          display: flex;
+          justify-content: space-around;
+          margin: 20px;
+      }
+  
+      .contacto__imagen{
+          margin: 80px 0px 20px 70px;        
+  
+      }
+  
+      section .contacto__principal{
+          justify-content: left;
+          flex-grow: 1;
+      }
+   
+  
+  }
